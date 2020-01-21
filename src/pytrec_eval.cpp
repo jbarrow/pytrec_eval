@@ -337,7 +337,7 @@ static int RelevanceEvaluator_init(RelevanceEvaluator* self, PyObject* args, PyO
 
     // Configure trec_eval session.
     self->epi_.query_flag = 0;
-    self->epi_.average_complete_flag = 0;
+    self->epi_.average_complete_flag = 1;
     self->epi_.judged_docs_only_flag = 0;
     self->epi_.summary_flag = 0;
     self->epi_.relation_flag = 1;
